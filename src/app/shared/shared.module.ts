@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MenuComponent } from './components/menu/menu.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { MenubarModule } from 'primeng/menubar';
 
 
 
@@ -12,10 +13,11 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
   ],
   imports: [
     CommonModule,
-    PrimeNgModule
+    PrimeNgModule //Importo tanto el MenuComponent, como el MenubarModule
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    MenubarModule
   ]
 
 })
